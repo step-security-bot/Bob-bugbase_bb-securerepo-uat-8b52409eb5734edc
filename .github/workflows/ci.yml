@@ -1,0 +1,14 @@
+name: BugBase Secure Repo Synthetic Fixture
+
+on:
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  synthetic:
+    if: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "BugBase synthetic fixture"
